@@ -21,9 +21,11 @@ function App() {
   }
 
   return (
-    <div>
-      <div>{sampleBusiness.name}</div>
-      <div>{sampleBusiness.categories[0].title}</div>
+    <div className="card">
+      <div className="header">
+        <div className="title">{sampleBusiness.name}</div>
+        <div className="subtitle">{sampleBusiness.categories[0].title}</div>
+      </div>
       <img src={sampleBusiness.image_url} alt="Business" />
       <div>{sampleBusiness.location.address1}</div>
       <div>{sampleBusiness.location.address2}</div>

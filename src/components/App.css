@@ -1,0 +1,35 @@
+.card {
+  width: 90%;
+  margin: 20px;
+  border: dimgray solid 2px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 dimgray;
+}
+
+.card > .header {
+  margin: 10px;
+  text-align: center;
+}
+
+.card > .header > .title {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.card > .header > .subtitle {
+  color: dimgray
+}
+
+.card > img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 640px) {
+  .card {
+    width: 280px;
+  }
+
+  .card > img {
+    height: 400px;
+  }
+}
