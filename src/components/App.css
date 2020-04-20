@@ -33,6 +33,15 @@
   justify-content: center;
 }
 
+.card > .rating {
+  display: flex;
+  justify-content: center;
+}
+
+.card > .cost {
+  text-align: center;
+}
+
 @media only screen and (min-width: 640px) {
   .card {
     width: 280px;
