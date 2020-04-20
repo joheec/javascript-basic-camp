@@ -27,11 +27,13 @@ function App() {
         <div className="subtitle">{sampleBusiness.categories[0].title}</div>
       </div>
       <img src={sampleBusiness.image_url} alt="Business" />
-      <div>{sampleBusiness.location.address1}</div>
-      <div>{sampleBusiness.location.address2}</div>
-      <div>{sampleBusiness.location.address3}</div>
-      <div>{sampleBusiness.location.city + ', ' + sampleBusiness.location.zip_code}</div>
-      <div>{sampleBusiness.display_phone}</div>
+      <div className="address">
+        <div>{sampleBusiness.location.address1}</div>
+        <div>{sampleBusiness.location.address2}</div>
+        <div>{sampleBusiness.location.address3}</div>
+        <div>{sampleBusiness.location.city + ', ' + sampleBusiness.location.zip_code}</div>
+        <div>{sampleBusiness.display_phone}</div>
+      </div>
       <div>{sampleBusiness.rating}</div>
       <div>{sampleBusiness.price}</div>
     </div>
